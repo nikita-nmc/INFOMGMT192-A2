@@ -27,10 +27,18 @@ h2 {
 	color: black;
 }
 
-line {
-	font-size: 600%;
+h3 {
+	font-size: 200%;
+	color:black;
+}
+
+.line {
+	margin-bottom: 50px;
+	font-family: "Arial Black";
+	font-size: 100%;
 	color: black;
 	float: left;
+
 }
 
 .text {
@@ -76,6 +84,12 @@ img {
 	padding:40px;
 }
 
+.column2 {
+	float: left;
+	width: 40%;
+	padding:40px;
+}
+
 /* Clearing floats after the image containers */
 .row::after {
 	content: "";
@@ -88,3 +102,14 @@ img {
 	font-family: "Arial";
 }
 
+footer {
+	font-size: 80%;
+	padding: 7px 0px 0px 20px;}
+
+#grad {
+	background-image: linear-gradient(to bottom right, white, whitesmoke);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
