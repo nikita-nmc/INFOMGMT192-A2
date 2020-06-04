@@ -4,8 +4,35 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<!-- Container for displaying a full height image -->
-		<div id="header-image">
+	<!-- Container for displaying a full height image -->
+	<div class="slideshow-container">
+		<!-- Full-width images -->
+		<div class="mySlides fade">
+			<img src="Images/jump.jpg">
+		</div>
+		<div class="mySlides fade">
+			<img src="Images/paris.jpg">
+		</div>
+		<div class="mySlides fade">
+			<img src="Images/crew.jpg">
+		</div>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				for (i = 0; i <slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+				slides[slideIndex-1].style.display = "block";
+				setTimeout(showSlides, 5000);
+			}
+		</script>
 			<!-- Container for displaying header information -->
 			<div id="header">
 				<h1 class="center">THINK GLOBAL</h1>
@@ -17,16 +44,16 @@
 		<div id="content">
 			<div class="row">
 				<div class="column">
-					<img src="Images\Untitled-1.png" alt="person1" style="width:100%">
+					<img src="Images/Untitled-1.png" alt="person1" style="width:100%">
 				</div>
 				<div class="column">
-					<img src="Images\Untitled-2.png" alt="person2" style="width:100%">
+					<img src="Images/Untitled-2.png" alt="person2" style="width:100%">
 				</div>
 				<div class="column">
-					<img src="Images\Untitled-3.png" alt="person3" style="width:100%">
+					<img src="Images/Untitled-3.png" alt="person3" style="width:100%">
 				</div>
 				<div class="column">
-					<img src="Images\Untitled-4.png" alt="person4" style="width:100%">
+					<img src="Images/Untitled-4.png" alt="person4" style="width:100%">
 				</div>
 			</div>
 	
