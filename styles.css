@@ -2,7 +2,7 @@
 #header-image {
 	height: 100%;
 	
-	background-image: url("../images/background.jpg");	
+	background-image: url("Images/paris.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;		
@@ -22,6 +22,22 @@ h1 {
 
 }
 
+h2 {
+	font-size: 500%;
+	color: black;
+}
+
+line {
+	font-size: 600%;
+	color: black;
+	float: left;
+}
+
+.text {
+	font-family: "Arial";
+	font-size: 80%
+}
+
 /* CSS rule for displaying introduction text boldfaced and with larger font */
 #intro {
 	font-weight: bold;	
@@ -36,7 +52,7 @@ h1 {
 
 /* CSS rule for container displaying all content centered */
 #content {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 }	
 
@@ -47,50 +63,28 @@ h1 {
 
 /* CSS rule for displaying images in a single line, centered, and with customized dimensions */
 img {
+	margin: 25px 0px 25px 0px;
+	width: 100%;
 	display: block;
-	margin: 0px auto;
-
-	width: 350px;
-	height: 300px;
+	height: auto;
 }
 
 /* CSS rule for 4 side by side image containers */
 .column {
 	float: left;
-	width: 25%;
-	padding: 5px;
+	width: 15%;
+	padding:40px;
 }
 
 /* Clearing floats after the image containers */
 .row::after {
 	content: "";
 	clear: both;
-	display: table;
+	display: table-row;
 }
 
-/* Slideshow container */
-.slideshow-container {
-	max-width: 1000px;
-	margin: auto;
-	background-position: center center;
-	background-repeat: no-repeat;
-
+.pageFont {
+	text-align: center;
+	font-family: "Arial";
 }
 
-/* Fading animation */
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-}

@@ -5,34 +5,7 @@
 	</head>
 	<body>
 	<!-- Container for displaying a full height image -->
-	<div class="slideshow-container">
-		<!-- Full-width images -->
-		<div class="mySlides fade">
-			<img src="Images/jump.jpg">
-		</div>
-		<div class="mySlides fade">
-			<img src="Images/paris.jpg">
-		</div>
-		<div class="mySlides fade">
-			<img src="Images/crew.jpg">
-		</div>
-
-		<script>
-			var slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				for (i = 0; i <slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) {slideIndex = 1}
-				slides[slideIndex-1].style.display = "block";
-				setTimeout(showSlides, 5000);
-			}
-		</script>
+			<div id="header-image">
 			<!-- Container for displaying header information -->
 			<div id="header">
 				<h1 class="center">THINK GLOBAL</h1>
@@ -42,27 +15,34 @@
 
 		<!-- Image testimonials -->
 		<div id="content">
+			<div class="container">
 			<div class="row">
 				<div class="column">
-					<img src="Images/Untitled-1.png" alt="person1" style="width:100%">
+					<img src="Images/Untitled-1.png" alt="person1" style="width:140%">
+					<div class="overlay">
+						<div class="text">One of the best experiences of my life</div>
+					</div>
 				</div>
 				<div class="column">
-					<img src="Images/Untitled-2.png" alt="person2" style="width:100%">
+					<img src="Images/Untitled-2.png" alt="person2" style="width:140%">
+					<div class="text">Extremely eye-opening and has helped shape my world-view</div>
 				</div>
 				<div class="column">
-					<img src="Images/Untitled-3.png" alt="person3" style="width:100%">
+					<img src="Images/Untitled-3.png" alt="person3" style="width:140%">
+					<div class="text">My life hasn't been the same since</div>
 				</div>
 				<div class="column">
-					<img src="Images/Untitled-4.png" alt="person4" style="width:100%">
+					<img src="Images/Untitled-4.png" alt="person4" style="width:140%">
+					<div class="text">Completely changed my perspective on people and places</div>
 				</div>
 			</div>
-	
+			</div>
 		<!-- Container for centering all content in the page -->
 
-			<h1 class="center">ABOUT</h1>
-			<p id="about" class="center">At Think Global we aim to embody the respect, acceptance and appreciation of the cultural diversity that exists and believe in a world where everyone is free to have their own convictions while
+			<h2 class="pageFont">ABOUT</h2>
+			<p id="about" class="pageFont">At Think Global we aim to embody the respect, acceptance and appreciation of the cultural diversity that exists and believe in a world where everyone is free to have their own convictions while
 										 Accepting that others have the right to live in peace, regardless of the diversity of their beliefs, identity or way of life.</p>
-			<p id="about-continued" class="center">We recognise that intolerance stems from ignorance and fear of difference cultures, nations or religions. Thus, or mission is to provide exchange programs that contribute to the understanding and learning of
+			<p id="about-continued" class="pageFont">We recognise that intolerance stems from ignorance and fear of difference cultures, nations or religions. Thus, or mission is to provide exchange programs that contribute to the understanding and learning of
 												   of societies with a different culture, religion, political or economic system.</p>
 					
 			<!-- Container for each adventure item -->						
