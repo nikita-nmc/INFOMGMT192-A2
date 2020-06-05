@@ -102,6 +102,15 @@ img {
 	font-family: "Arial";
 }
 
+.pageFont2 {
+	font-family: "Arial";
+}
+
+.pageFont3 {
+	text-align: right;
+	font-family: "Arial";
+}
+
 footer {
 	font-size: 80%;
 	padding: 7px 0px 0px 20px;}
