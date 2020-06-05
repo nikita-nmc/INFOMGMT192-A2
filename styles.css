@@ -2,7 +2,7 @@
 #header-image {
 	height: 100%;
 	
-	background-image: url("Images/paris.jpg");
+	background-image: url("Images/tourists.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;		
@@ -46,6 +46,13 @@ h3 {
 	font-size: 80%
 }
 
+.text2 {
+	margin-left: 65px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 80%
+}
+
 /* CSS rule for displaying introduction text boldfaced and with larger font */
 #intro {
 	font-weight: bold;	
@@ -62,11 +69,10 @@ h3 {
 #content {
 	max-width: 1000px;
 	margin: 0 auto;
-}	
+}
 
-/* CSS rule for displaying adventure items with a border at the bottom */
-.adventure {
-	border-bottom: 2px solid grey;
+.blackline {
+	border-bottom: 1px solid black;
 }
 
 /* CSS rule for displaying images in a single line, centered, and with customized dimensions */
@@ -75,6 +81,7 @@ img {
 	width: 100%;
 	display: block;
 	height: auto;
+	position: initial;
 }
 
 /* CSS rule for 4 side by side image containers */
@@ -82,12 +89,14 @@ img {
 	float: left;
 	width: 15%;
 	padding:40px;
+	position: initial;
 }
 
 .column2 {
 	float: left;
 	width: 40%;
 	padding:40px;
+	position: initial;
 }
 
 /* Clearing floats after the image containers */
@@ -100,10 +109,12 @@ img {
 .pageFont {
 	text-align: center;
 	font-family: "Arial";
+	position: initial;
 }
 
 .pageFont2 {
 	font-family: "Arial";
+	position: initial;
 }
 
 .pageFont3 {
@@ -121,4 +132,28 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
+}
+#myList li{
+	display:none;
+	position: static;
+}
+.term-list{ margin-bottom: 20px;}
+
+.reply {
+	display: none
+}
+
+button {
+	box-shadow:inset 0px -50px 0px 0px #ffffff;
+	background-color:#f9f9f9;
+	border-radius:42px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }

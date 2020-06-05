@@ -1,11 +1,54 @@
-function displayBerlin() {
-    $("#berlin").text("- Live in a hostel with 5 other exchange students\n" +
-        "- Organised cultural exchange programmes at local schools and businesses\n" +
-        "- Experience the centre of 20th century European history - a city divided in ideology\n" +
-        "Excursions to countryside breweries for authentic German brewing and beer-tasting experience\n" +
-        "Kickstart your future career with a German-centric focus!\n");
-    }
+function toggle(id, ele) {
+    let cont = document.getElementById(id);
+    if (cont.style.visibility == 'visible') {
+        cont.style.visibility = 'hidden';
 
-    $("#myButton").on("click", function() {
-        $("#myName").text("Jose");
+        document.getElementById(ele.id).value = 'Show More';
+    }
+    else {
+        cont.style.visibility = 'visible';
+        document.getElementById(ele.id).value = 'Show Less';
+    }
+}
+/*
+$('ul.expandible').each(function(){
+    var $ul = $(this),
+        $lis = $ul.find('li:gt(4)'),
+        isExpanded = $ul.hasClass('expanded');
+    $lis[isExpanded ? 'show' : 'hide']();
+
+    if($lis.length > 0){
+        $ul
+            .append($('<li class="expand"><span>' + (isExpanded ? 'Less' : 'More') + '</span></li>')
+                .click(function(event){
+                    var isExpanded = $ul.hasClass('expanded');
+                    event.preventDefault();
+                    $(this).text(isExpanded ? 'More' : 'Less');
+                    $ul.toggleClass('expanded');
+                    $lis.toggle();
+                }));
+    }
+});
+
+
+/!*
+var flag = false;
+
+$(function () {
+    if (flag == false) {
+    //$('#myList li').slice(0, 0).show();
+    $('#loadMore').on('click', function (e) {
+        e.preventDefault();
+        $('#myList li').slice(0, 5).slideDown();
+        document.getElementById("loadMore").innerText = "See Less";
+        flag = true;
     });
+    }
+    if (flag == true) {
+        x = 0;
+        $('#loadMore').on('click', function (e) {
+        $('#myList li').slice(5,0).slideUp();
+    });
+        }
+});*!/
+*/

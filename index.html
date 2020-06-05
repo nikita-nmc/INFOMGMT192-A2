@@ -26,20 +26,20 @@
 				<div class="column">
 					<img src="Images/Untitled-1.png" alt="person1" style="width:140%">
 					<div class="overlay">
-						<div class="text">One of the best experiences of my life</div>
+						<div class="text2">"One of the best experiences of my life"</div>
 					</div>
 				</div>
 				<div class="column">
 					<img src="Images/Untitled-2.png" alt="person2" style="width:140%">
-					<div class="text">Extremely eye-opening and has helped shape my world-view</div>
+					<div class="text2">"Extremely eye-opening and has helped shape my world-view"</div>
 				</div>
 				<div class="column">
 					<img src="Images/Untitled-3.png" alt="person3" style="width:140%">
-					<div class="text">My life hasn't been the same since</div>
+					<div class="text2">"My life hasn't been the same since"</div>
 				</div>
 				<div class="column">
 					<img src="Images/Untitled-4.png" alt="person4" style="width:140%">
-					<div class="text">Completely changed my perspective on people and places</div>
+					<div class="text2">"Completely changed my perspective on people and places"</div>
 				</div>
 			</div>
 			</div>
@@ -56,94 +56,121 @@
 					
 			<!-- Container for each adventure item -->						
 			<div class="adventure">
+
 				<div class="column2">
 					<img src="Images/berlin.jpg" alt="berlin" style="width:80%"?>
 				</div>
 				<div class="column2">
 					<h3 class="pageFont">A semester in Berlin</h3>
+					<p class="pageFont2">Immerse yourself in the heart of Europe while studying at the prestigious 'Freie Universitat Berlin'.</p>
+					<button id="btn" onclick="toggle('cont', this)">Show More</button>
+					<div style="visibility:hidden;" id="cont">
+						<ul>
+						<li class="pageFont2">Live in a hostel with 5 other exchange students</li>
+						<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
+						<li class="pageFont2">Experience the centre of 20th century European history - a city divided in ideology</li>
+						<li class="pageFont2">Excursions to countryside breweries for authentic German brewing and beer-tasting experience</li>
+						<li class="pageFont2">Kickstart your future career with a German-centric focus </li>
+					</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="adventure">
+				<div class="column2">
+					<img src="Images/forest.jpg" alt="asia" style="width:80%"?>
+				</div>
+				<div class="column2">
+					<h3 class="pageFont">Away in Asia</h3>
 					<p class="pageFont2">
-						Immerse yourself in the heart of Europe while studying at the prestigious 'Freie Universitat Berlin'.
+						Experience a semester in the sun-soaked Phuket the tourists don't see.
 					</p>
-					<p>
-						<button type="button" id="readMore" onclick="displayBerlin()">Read More</button>
-						<span id="berlin"></span>
+					<button id="btn1" onclick="toggle('cont1', this)">Show More</button>
+					<div style="visibility:hidden;" id="cont1">
+						<ul>
+							<li class="pageFont2">Live in a hostel with 6 other exchange students at Prince of Songkla University</li>
+							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
+							<li class="pageFont2">Tropical water experiences, snorkling, diving, boating</li>
+							<li class="pageFont2">Excursions to Banana plantation - work a day in the life of a local</li>
+							<li class="pageFont2">Equip yourself for close cultural ties to Thailand</li>
+						</ul>
+					</div>
+			</div>
+
+			<div class="adventure">
+				<div class="column2">
+					<img src="Images/kenya.jpg" alt="kenya" style="width:80%"?>
+				</div>
+				<div class="column2">
+					<h3 class="pageFont">Authentic Africa</h3>
+					<p class="pageFont2">
+						Spend a semester in Kenya studying at the University of Nairobi.
 					</p>
+					<button id="btn2" onclick="toggle('cont2', this)">Show More</button>
+					<div style="visibility:hidden;" id="cont2">
+						<ul>
+							<li class="pageFont2">Live in a hostel with 4 other exchange students</li>
+							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
+							<li class="pageFont2">Volunteer work at food provincial food banks</li>
+							<li class="pageFont2">Excursions to outback</li>
+							<li class="pageFont2">See Africa for yourself</li>
+						</ul>
+					</div>
+			</div>
+
+			<div class="adventure">
+				<div class="column2">
+					<img src="Images/beach.jpg" alt="brazil" style="width:80%"?>
 				</div>
-
-				<img src="">
-
-
-
-					<div class="column2">
-						<img src="Images/forest.jpg" alt="asia" style="width:80%"?>
+				<div class="column2">
+					<h3 class="pageFont">Brilliant Brazil</h3>
+					<p class="pageFont2">
+						Experience a semester in Rio studying at the famous 'Universidade Federal do Rio de Janeiro'.
+					</p>
+					<button id="btn3" onclick="toggle('cont3', this)">Show More</button>
+					<div style="visibility:hidden;" id="cont3">
+						<ul>
+							<li class="pageFont2">Live in a hostel with 5 other exchange students</li>
+							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
+							<li class="pageFont2">Be a volunteer lifeguard at the Ipanema beach</li>
+							<li class="pageFont2">Excursions to rural Brasilian villages</li>
+							<li class="pageFont2">See the Olympic city</li>
+						</ul>
 					</div>
-					<div class="column2">
-						<h3 class="pageFont">Away in Asia</h3>
-						<p class="pageFont2">
-							Experience a semester in the sun-soaked Phuket the tourists don't see.
-						</p>
-						<p>
-							<button type="button" id="readMore" onclick="displayBerlin()">Read More</button>
-							<span id="berlin"></span>
-						</p>
-					</div>
+			</div>
 
-					<img src="">
+			<div class="adventure">
 
 
-					<div class="column2">
-						<img src="Images/kenya.jpg" alt="kenya" style="width:80%"?>
-					</div>
-					<div class="column2">
-						<h3 class="pageFont">Authentic Africa</h3>
-						<p class="pageFont2">
-							Spend a semester in Kenya studying at the University of Nairobi.
-						</p>
-						<p>
-							<button type="button" id="readMore" onclick="displayBerlin()">Read More</button>
-							<span id="berlin"></span>
-						</p>
-					</div>
-
-					<img src="">
-
-
-					<div class="column2">
-						<img src="Images/beach.jpg" alt="brazil" style="width:80%"?>
-					</div>
-					<div class="column2">
-						<h3 class="pageFont">Brilliant Brazil</h3>
-						<p class="pageFont2">
-							Experience a semester in Rio studying at the famous 'Universidade Federal do Rio de Janeiro'.
-						</p>
-						<p>
-							<button type="button" id="readMore" onclick="displayBerlin()">Read More</button>
-							<span id="berlin"></span>
-						</p>
-					</div>
-
-					<img src="">
-
-
-					<div class="column2">
-						<img src="Images/quebec.jpg" alt="berlin" style="width:80%"?>
-					</div>
-					<div class="column2">
-						<h3 class="pageFont">O Canada</h3>
-						<p class="pageFont2">
-							Study for a semester at McGill University and see the French side of Canada.
-						</p>
-						<p>
-							<button type="button" id="readMore" onclick="displayBerlin()">Read More</button>
-							<span id="berlin"></span>
-						</p>
-					</div>
-
-					<img src="">
-
+				<div class="column2">
+					<img src="Images/quebec.jpg" alt="berlin" style="width:80%"?>
 				</div>
+				<div class="column2">
+					<h3 class="pageFont">Ô Canada</h3>
+					<p class="pageFont2">
+						Study for a semester at McGill University and see the French side of Canada.
+					</p>
+					<button id="btn4" onclick="toggle('cont4', this)">Show More</button>
+					<div style="visibility:hidden;" id="cont4">
+						<ul>
+							<li class="pageFont2">Live in a hostel in Stoneham, outside Quebic city with 5 other exchange students</li>
+							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
+							<li class="pageFont2">Work part-time at a local Maple Syrup factory</li>
+							<li class="pageFont2">Excursions to rural Canadian villages</li>
+							<li class="pageFont2">See the French side of Canada</li>
+						</ul>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+
+			<span style="display:inline-block; width: 2560px;"></span>
+
 			<div class="adventure">
 				<h3 class="pageFont">Get in touch</h3>
+				<div class="blackline"></div>
 				<div class="column2">
 					<ul class="pageFont2">
 						<li>Phone: 0800 888 888</li>
@@ -158,6 +185,5 @@
 			</div>
 			</div>
 		</div>
-
 		</body>
 </html>
