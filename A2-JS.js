@@ -3,11 +3,11 @@ function toggle(id, ele) {
     if (cont.style.visibility == 'visible') {
         cont.style.visibility = 'hidden';
 
-        document.getElementById(ele.id).value = 'Show More';
+        document.getElementById(ele.id).innerText = 'Show More';
     }
     else {
         cont.style.visibility = 'visible';
-        document.getElementById(ele.id).value = 'Show Less';
+        document.getElementById(ele.id).innerText = 'Show Less';
     }
 }
 

@@ -1,0 +1,53 @@
+Index: A2-JS.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- A2-JS.js	(revision 9cadfa29a6a0b193cc852ca5a3aad3cfaea5a27a)
++++ A2-JS.js	(date 1591364896583)
+@@ -10,45 +10,4 @@
+         document.getElementById(ele.id).value = 'Show Less';
+     }
+ }
+-/*
+-$('ul.expandible').each(function(){
+-    var $ul = $(this),
+-        $lis = $ul.find('li:gt(4)'),
+-        isExpanded = $ul.hasClass('expanded');
+-    $lis[isExpanded ? 'show' : 'hide']();
+-
+-    if($lis.length > 0){
+-        $ul
+-            .append($('<li class="expand"><span>' + (isExpanded ? 'Less' : 'More') + '</span></li>')
+-                .click(function(event){
+-                    var isExpanded = $ul.hasClass('expanded');
+-                    event.preventDefault();
+-                    $(this).text(isExpanded ? 'More' : 'Less');
+-                    $ul.toggleClass('expanded');
+-                    $lis.toggle();
+-                }));
+-    }
+-});
+ 
+-
+-/!*
+-var flag = false;
+-
+-$(function () {
+-    if (flag == false) {
+-    //$('#myList li').slice(0, 0).show();
+-    $('#loadMore').on('click', function (e) {
+-        e.preventDefault();
+-        $('#myList li').slice(0, 5).slideDown();
+-        document.getElementById("loadMore").innerText = "See Less";
+-        flag = true;
+-    });
+-    }
+-    if (flag == true) {
+-        x = 0;
+-        $('#loadMore').on('click', function (e) {
+-        $('#myList li').slice(5,0).slideUp();
+-    });
+-        }
+-});*!/
+-*/
