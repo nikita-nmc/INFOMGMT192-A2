@@ -20,7 +20,7 @@
 		</div>
 
 		<!-- Image testimonials -->
-		<div id="content">
+		<li id="content" style="list-style: none">
 			<div class="container">
 			<div class="row">
 				<div class="column">
@@ -53,31 +53,38 @@
 												   of societies with a different culture, religion, political or economic system.</p>
 
 			<p><span class="line">_____________________________________________________________________________________________________________________________</span></p>
+			<input id="myInput" type="text" placeholder="Search..">
 					
-			<!-- Container for each adventure item -->						
-			<div class="adventure">
+			<!-- Container for each adventure item -->
+			<div id="searchable">
+			<ul id="exchanges" style="list-style: none">
 
+				<div class="adventure">
+				<li>
 				<div class="column2">
 					<img src="Images/berlin.jpg" alt="berlin" style="width:80%"?>
 				</div>
 				<div class="column2">
 					<h3 class="pageFont">A semester in Berlin</h3>
 					<p class="pageFont2">Immerse yourself in the heart of Europe while studying at the prestigious 'Freie Universitat Berlin'.</p>
+					<span style="display:inline-block; width: 2560px;"></span>
 					<button id="btn" onclick="toggle('cont', this)">Show More</button>
+
 					<div style="visibility:hidden;" id="cont">
 						<ul>
 						<li class="pageFont2">Live in a hostel with 5 other exchange students</li>
 						<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
 						<li class="pageFont2">Experience the centre of 20th century European history - a city divided in ideology</li>
 						<li class="pageFont2">Excursions to countryside breweries for authentic German brewing and beer-tasting experience</li>
-						<li class="pageFont2">Kickstart your future career with a German-centric focus </li>
+						<li class="pageFont2">Kick-start your future career with a German-centric focus </li>
 					</ul>
 					</div>
 				</div>
+				</li>
 			</div>
 
-
 			<div class="adventure">
+				<li>
 				<div class="column2">
 					<img src="Images/forest.jpg" alt="asia" style="width:80%"?>
 				</div>
@@ -91,14 +98,18 @@
 						<ul>
 							<li class="pageFont2">Live in a hostel with 6 other exchange students at Prince of Songkla University</li>
 							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
-							<li class="pageFont2">Tropical water experiences, snorkling, diving, boating</li>
+							<li class="pageFont2">Tropical water experiences, snorkeling, diving, boating</li>
 							<li class="pageFont2">Excursions to Banana plantation - work a day in the life of a local</li>
 							<li class="pageFont2">Equip yourself for close cultural ties to Thailand</li>
 						</ul>
 					</div>
 			</div>
+			</li>
+			</div>
+
 
 			<div class="adventure">
+				<li>
 				<div class="column2">
 					<img src="Images/kenya.jpg" alt="kenya" style="width:80%"?>
 				</div>
@@ -118,8 +129,12 @@
 						</ul>
 					</div>
 			</div>
+			</li>
+			</div>
+
 
 			<div class="adventure">
+				<li>
 				<div class="column2">
 					<img src="Images/beach.jpg" alt="brazil" style="width:80%"?>
 				</div>
@@ -134,15 +149,18 @@
 							<li class="pageFont2">Live in a hostel with 5 other exchange students</li>
 							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
 							<li class="pageFont2">Be a volunteer lifeguard at the Ipanema beach</li>
-							<li class="pageFont2">Excursions to rural Brasilian villages</li>
+							<li class="pageFont2">Excursions to rural Brazilian villages</li>
 							<li class="pageFont2">See the Olympic city</li>
 						</ul>
 					</div>
 			</div>
+			</li>
+			</div>
+
 
 			<div class="adventure">
 
-
+				<li>
 				<div class="column2">
 					<img src="Images/quebec.jpg" alt="berlin" style="width:80%"?>
 				</div>
@@ -154,7 +172,7 @@
 					<button id="btn4" onclick="toggle('cont4', this)">Show More</button>
 					<div style="visibility:hidden;" id="cont4">
 						<ul>
-							<li class="pageFont2">Live in a hostel in Stoneham, outside Quebic city with 5 other exchange students</li>
+							<li class="pageFont2">Live in a hostel in Stoneham, outside Quebec city with 5 other exchange students</li>
 							<li class="pageFont2">Organised cultural exchange programmes at local schools and businesses</li>
 							<li class="pageFont2">Work part-time at a local Maple Syrup factory</li>
 							<li class="pageFont2">Excursions to rural Canadian villages</li>
@@ -162,17 +180,20 @@
 						</ul>
 				</div>
 			</div>
-			</div>
-			</div>
+			</li>
 			</div>
 
+		</li>
+	</ul>
+		<div>
+		<div>
 			<span style="display:inline-block; width: 2560px;"></span>
 
 			<div class="adventure">
 				<h3 class="pageFont">Get in touch</h3>
 				<div class="blackline"></div>
 				<div class="column2">
-					<ul class="pageFont2">
+					<ul class="pageFont2" display="table" margin="0">
 						<li>Phone: 0800 888 888</li>
 						<li>Email: hi@thinkglobal.com</li>
 						<li>Address: 101 Global Drive, Auckland</li>
@@ -184,6 +205,7 @@
 					<p class="pageFont3">Please do not hesitate to contact us 8:00-17:30 7 days.</p>
 			</div>
 			</div>
+		</div>
 		</div>
 		</body>
 </html>
