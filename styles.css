@@ -99,7 +99,7 @@ img {
 	position: initial;
 }
 
-/* CSS rules for Arial fonts */
+/* CSS rules for Arial fonts and alignments */
 .pageFont {
 	text-align: center;
 	font-family: "Arial";
@@ -121,6 +121,7 @@ img {
 	position: static;
 }
 
+/* Used a free CSS generator for this button graphic, default button would have otherwise been used, purely a cosmetic change unrelated to mark scheme so feel free to disregard if necessary*/
 button {
 	box-shadow:inset 0px -50px 0px 0px #ffffff;
 	background-color:#f9f9f9;
