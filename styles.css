@@ -99,13 +99,6 @@ img {
 	position: initial;
 }
 
-/* Clearing floats after the image containers */
-.row::after {
-	content: "";
-	clear: both;
-	display: table-row;
-}
-
 .pageFont {
 	text-align: center;
 	font-family: "Arial";
